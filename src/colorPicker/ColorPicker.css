@@ -1,0 +1,53 @@
+.color-picker {
+}
+
+input {
+    height: 100%;
+}
+
+.color {
+    display: flex;
+
+    flex-direction: column;
+    
+    gap: .5em;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picker {
+    position: relative;
+    height: 24px;
+}
+
+.picker-canvas {
+    cursor: pointer;
+    border: 1px solid black;
+
+    width: 100%;
+}
+
+.picker-slider {
+    display: block;
+    height: calc(100% + .5em);
+    width: .75em;
+
+    background: red;
+
+    position: absolute;
+
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    top: 0;
+
+    margin-top: -.25em;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}

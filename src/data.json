@@ -1,0 +1,139 @@
+{
+    "groups": [
+        {
+            "text": "Landscape",
+            "subText": "natural only",
+
+            "original": "#BBE2C6",
+            "type": "replace",
+            
+            "keys": [
+                "landscape.natural",
+                "landscape.natural.landcover",
+
+                "poi",
+                "poi.park",
+                "poi.business"
+            ]
+        },
+        
+        {
+            "text": "Landscape",
+            "subText": "man made only",
+
+            "original": "#E8EAED",
+            "type": "replace",
+            
+            "keys": [
+                "landscape.man_made"
+            ]
+        },
+        
+        {
+            "text": "Roads",
+            "subText": "discluding highways",
+
+            "original": "#FFFFFF",
+            "type": "shift",
+            
+            "keys": [
+                "road.arterial",
+                "road.local",
+                "transit.line"
+            ]
+        },
+        
+        {
+            "text": "Roads",
+            "subText": "including highways",
+
+            "original": "#FDE293",
+            "type": "shift",
+            
+            "keys": [
+                "road.highway",
+                "road.highway.controlled_access"
+            ]
+        },
+        
+        {
+            "text": "Water",
+            "subText": "",
+
+            "original": "#8AB4F8",
+            "type": "replace",
+            
+            "keys": [
+                "water"
+            ]
+        }
+    ],
+
+    "featureTypes": {
+        "administrative.country": {
+            "geometry.stroke": "#000"
+        },
+
+        "landscape.man_made": {
+            "geometry.fill": "#E8EAED"
+        },
+
+        "landscape.natural": {
+            "geometry.fill": "#BBE2C6"
+        },
+
+        "landscape.natural.landcover": {
+            "geometry.fill": "#BBE2C6"
+        },
+
+        "landscape.natural.terrain": {
+            "geometry.fill": "#FFFFFF"
+        },
+
+        "poi": {
+            "geometry.fill": "#CEEAD6"
+        },
+
+        "poi.park": {
+            "geometry.fill": "#CEEAD6"
+        },
+
+        "poi.business": {
+            "geometry.fill": "#CEEAD6"
+        },
+
+        "water": {
+            "geometry.fill": "#8AB4F8"
+        },
+
+        "road.arterial": {
+            "geometry.fill": "#FFFFFF",
+            "geometry.stroke": "#DADCE0"
+        },
+
+        "road.highway": {
+            "geometry.fill": "#FDE293",
+            "geometry.stroke": "#F9AB00"
+        },
+
+        "road.highway.controlled_access": {
+            "geometry.fill": "#FDE293",
+            "geometry.stroke": "#F9AB00"
+        },
+
+        "road.local": {
+            "geometry.fill": "#FFFFFF",
+            "geometry.stroke": "#DADCE0"
+        },
+
+        "transit.line": {
+            "geometry.fill": "#FFFFFF",
+            "geometry.stroke": "#FFFFFF"
+        },
+
+        "transit.station.airport": {
+            "geometry.fill": "#FFFFFF",
+            "geometry.stroke": "#DADCE0"
+        }
+    }
+}
